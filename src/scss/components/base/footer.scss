@@ -1,0 +1,149 @@
+.footer{
+  width: calc(100% + 140px);
+  margin-left: -140px;
+  background-color: #000;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-left: 100px;
+  padding-right: 140px;
+  padding-bottom: 40px;
+}
+
+
+.footer__left{
+  display: flex;
+}
+
+.footer__logo {
+  margin-right: 300px;
+}
+
+.footer__title{
+  font-size: 27px;
+  font-weight: 500;
+  color: #fff;
+  opacity: .8;
+  margin-bottom: 15px;
+}
+
+
+.footer__info {
+  text-align: right;
+}
+
+.footer__link a{
+  font-size: 20px;
+  color: #fff;
+  line-height: 35px;
+  opacity: .3;
+  transition: .4s;
+  &:hover{
+    opacity: 1;
+    color: $green;
+  }
+}
+
+
+.footer__email{
+  font-size: 20px;
+  color: #fff;
+  opacity: .3;
+  transition: .4s;
+  display: inline-block;
+  margin-bottom: 30px;
+  &:hover{
+    opacity: 1;
+    color: $green;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 48px;
+}
+
+.footer__social{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(#fff, .40);
+  margin-left: 20px;
+  &:first-child{
+    margin-left: 0px;
+  }
+}
+
+.footer__langs{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__lang{
+  font-size: 28px;
+  margin-left: 18px;
+  color: #fff;
+  opacity: .4;
+  font-weight: 500;
+  &.active{
+    opacity: 1;
+  }
+  &:first-child{
+    margin-left: 0px;
+  }
+}
+
+.footer__description {
+  position: relative;
+  padding-left: 140px;
+  padding-right: 280px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(#fff, .2);
+  border-top: 1px solid rgba(#fff, .2);
+  p{
+    font-size: 15px;
+    color: #fff;
+    opacity: .3;
+    line-height: 20px;
+  }
+}
+
+.footer__political{
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 140px;
+  padding-right: 140px;
+  a{
+    font-size: 15px;
+    color: #fff;
+    opacity: .3;
+    margin-left: 65px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    transition: .4s;
+    &:hover{
+      color: $green;
+      opacity: 1;
+    }
+  }
+}
+
+.footer__anchor{
+  position: absolute;
+  right: 140px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #1A1A1A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

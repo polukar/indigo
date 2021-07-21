@@ -1,0 +1,82 @@
+.svgsprite {
+    display:inline-block;
+    fill:currentColor;
+    vertical-align:middle;
+
+    &._arrow-link-green {
+    	font-size:(25.43/10)*1rem;
+    	width:(25.898/25.43)*1em;
+    }
+    &._arrow-right {
+    	font-size:(25/10)*1rem;
+    	width:(24/25)*1em;
+    }
+    &._arrow-right-dark {
+    	font-size:(25/10)*1rem;
+    	width:(24/25)*1em;
+    }
+    &._construction {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._consultancy {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._estate {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._fitout {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._food {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._hospitality {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._indulge {
+    	font-size:(615/10)*1rem;
+    	width:(314/615)*1em;
+    }
+    &._interior {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._it {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._leisure {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._link-arrow-green {
+    	font-size:(25.43/10)*1rem;
+    	width:(25.898/25.43)*1em;
+    }
+    &._logo {
+    	font-size:(123/10)*1rem;
+    	width:(146/123)*1em;
+    }
+    &._mail {
+    	font-size:(25/10)*1rem;
+    	width:(35/25)*1em;
+    }
+    &._manpower {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._marketing {
+    	font-size:(64/10)*1rem;
+    	width:(64/64)*1em;
+    }
+    &._play {
+    	font-size:(27/10)*1rem;
+    	width:(25/27)*1em;
+    }
+}

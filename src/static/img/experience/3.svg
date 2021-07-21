@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="65.64" viewBox="0 0 75 65.64">
+  <g id="_3" data-name="3" transform="translate(-22654.1 -9769.619)">
+    <ellipse id="Ellipse_35" data-name="Ellipse 35" cx="5.497" cy="5.495" rx="5.497" ry="5.495" transform="translate(22703.613 9810.502)" fill="#02e9b9"/>
+    <path id="Exclusion_1" data-name="Exclusion 1" d="M14.927,14.227H0V7.462A7.464,7.464,0,0,1,7.164,0L5.555,7.2l1.873,2.63L9.3,7.2,7.653,0a7.464,7.464,0,0,1,7.274,7.462v6.764Z" transform="translate(22701.645 9821.032)" fill="#02e9b9"/>
+    <path id="Union_1" data-name="Union 1" d="M10.993,27.764V24.488a10.956,10.956,0,0,1-2.562-1.063L6.113,25.743l-4.091-4.09L4.34,19.336a10.949,10.949,0,0,1-1.063-2.561H0V10.99H3.277A10.951,10.951,0,0,1,4.34,8.429L2.021,6.111l4.091-4.09L8.431,4.339a10.958,10.958,0,0,1,2.562-1.063V0h5.786V3.276a10.956,10.956,0,0,1,2.562,1.063L21.66,2.021l4.091,4.09L23.432,8.429A10.949,10.949,0,0,1,24.5,10.99h3.277v5.784H24.5a10.947,10.947,0,0,1-1.063,2.561l2.318,2.318-4.091,4.09-2.318-2.318a10.954,10.954,0,0,1-2.562,1.063v3.276ZM7.522,13.882a6.365,6.365,0,1,0,6.365-6.363A6.371,6.371,0,0,0,7.522,13.882Z" transform="translate(22675.727 9777.995)" fill="#02e9b9"/>
+    <g id="Group_119" data-name="Group 119" transform="translate(22704.748 9769.619)">
+      <path id="Path_70" data-name="Path 70" d="M.1-.126,4.389-.1l.111,18.2L.43,14.038Z" transform="translate(12.462 8.966) rotate(45)" fill="#02e9b9"/>
+      <path id="Polygon_8" data-name="Polygon 8" d="M5.377,0l5.377,9.437H0Z" transform="translate(16.747 0) rotate(45)" fill="#02e9b9"/>
+    </g>
+    <ellipse id="Ellipse_39" data-name="Ellipse 39" cx="5.497" cy="5.495" rx="5.497" ry="5.495" transform="translate(22684.057 9810.502)" fill="#02e9b9"/>
+    <path id="Exclusion_3" data-name="Exclusion 3" d="M14.927,14.229H0V7.464a7.464,7.464,0,1,1,14.927,0v6.764ZM7.166.114h0l-1.611,7.2,1.873,2.63L9.3,7.315,7.653.114H7.166Z" transform="translate(22682.09 9821.029)" fill="#02e9b9"/>
+    <ellipse id="Ellipse_40" data-name="Ellipse 40" cx="5.497" cy="5.495" rx="5.497" ry="5.495" transform="translate(22664.5 9810.502)" fill="#02e9b9"/>
+    <path id="Exclusion_4" data-name="Exclusion 4" d="M14.927,14.227H0V7.462A7.464,7.464,0,0,1,7.164,0L5.555,7.2l1.873,2.63L9.3,7.2,7.653,0a7.464,7.464,0,0,1,7.274,7.462v6.764Z" transform="translate(22662.533 9821.032)" fill="#02e9b9"/>
+    <path id="Path_69" data-name="Path 69" d="M22039.02,10022.15l9.227-11.938h8.082v5.828h-6.572L22039.02,10029Z" transform="translate(615.08 -221.212)" fill="#02e9b9"/>
+    <text id="_" data-name="$" transform="translate(22686.105 9795.298)" fill="#02e9b9" font-size="10" font-family="SFProDisplay-Bold, SF Pro Display" font-weight="700"><tspan x="0" y="0">$</tspan></text>
+  </g>
+</svg>

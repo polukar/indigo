@@ -1,0 +1,391 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная'
+  - var bodyClass = 'dev'
+block content
+  section.main
+    .main__center
+      .container
+        h1.main__title Преумножаем криптовалюту <br>от 100% в год с помощью <br>ботов и алгоритмов
+        a.main__arrow
+          | Подробнее об Indigo Investment
+          .arrow-link
+            +svgsprite('arrow-link-green')
+    .main__chart 
+      <picture>
+        <source srcset="./assets/img/main/main-chart-mobile.svg" media="(max-width: 600px)">
+        <img src="./assets/img/main/main-chart.svg">
+      </picture>
+      .main__chart-numbers 100%
+  section.experience
+    h2.--white.experience__title Огромный опыт в&nbsp;крипторынке
+    .container 
+      .experience__list 
+        .experience__item
+          .experience__ico
+            img(src="./assets/img/experience/1.svg", alt="")
+          h3.experience__item-title Собственная команда разработчиков
+          p.text.experience__text Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.
+        .experience__item
+          .experience__ico
+            img(src="./assets/img/experience/2.svg", alt="")
+          h3.experience__item-title Торгуем с&nbsp;2015, управляем с&nbsp;2018
+          p.text.experience__text Наша команда торгует совместно с 2015 года. Профессионально управлять средствами мы начали в 2018 году,  в момент разработки нашего первого бота.
+        .experience__item
+          .experience__ico
+            img(src="./assets/img/experience/3.svg", alt="")
+          h3.experience__item-title Команда аналитиков и&nbsp;трейдеров
+          p.text.experience__text Мы собрали многосторонюю full-time команду из аналитиков и трейдеров высокого уровня, которые торгуют и анализируют рынок более 5-ти лет.
+  section.analize 
+    h2.analize__title Самый эффективный анализ
+    .container 
+      .analize__list
+        .analize__item.--ico-1
+          h4.analize__item-title.--white Сделки крупных <br>игроков
+          p.small-text.analize__text Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.
+        .analize__item.--ico-2
+          h4.analize__item-title.--white Объемы и дельта <br>проторговки
+          p.small-text.analize__text Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.
+        .analize__item.--ico-3
+          h4.analize__item-title.--white Накопления на <br>уровнях
+          p.small-text.analize__text Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.
+        .analize__item.--ico-4
+          h4.analize__item-title.--white Индикаторы <br>технического анализа
+          p.small-text.analize__text Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.
+      .analize__banner 
+        .analize__banner-item
+          .analize__banner-title Подробнее о методиках управления и выгодах мы регулярно рассказываем в нашем вебинаре 
+          p.text.analize__banner-text Следующий вебинар уже завтра, запишитесь уже сейчас!
+        .analize__banner-item
+          a.analize__banner-btn(href="#") 
+            | Записаться на вебинар
+            .arrow-link
+              +svgsprite('arrow-link-green')
+          .analize__banner-link
+            a(href="#") Задать вопрос личному менеджеру
+  section.about 
+    .about__wrap
+      h2.about__title Чем мы отличаемся от других?
+      .about__list 
+        .about__item.--ico-1
+          h3.about__item-title Токенизация активов фонда
+          p.about__text В нашем фонде создана специальная монета на базе блокчейна Waves, которая используется как гарант обеспечения средств в нашем фонде.
+        .about__item.--ico-2
+          h3.about__item-title Страховой фонд собственных средств
+          p.about__text Часть средств фонда мы используем в целях страхования рисков от волатильности криптовалютного рынка, помимо этого мы замораживаем определенный процент средств также в качестве "страхового" резерва.
+        .about__item.--ico-3
+          h3.about__item-title Грамотное усреднение и мани-менеджмент
+          p.about__text Мы используем систему продуманную систему ордеров, разработанную нами на основе данных о рынке за последние 5 лет, благодаря ей мы находим лучшие точки для усреднения и  безопасно распределяем средства фонда.
+        .about__item.--ico-4
+          h3.about__item-title Фондовый подход к управлению активами
+          p.about__text Как в лучших американских фондах - мы используем собственный баланс для усреднения, а также в торговле используем только малую часть средств и постоянно держим резерв для усреднения больших падений. 
+      .about__description + Персонализированный подход к <br>каждому инвестору
+      .btn-center
+        a.about__btn(href="#") Получить уникальные условия 
+  section.statistic 
+    .container 
+      h2.statistic__title.--white Статистика говорит за себя
+      .statistic__list
+        .static-chart
+          .static-chart__left
+            .static-chart__small-title Ваш доход
+            .static-chart__money -
+            .static-chart__procent -
+            .static-chart__description Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.
+          .static-chart__right
+            .static-year__description Статистика за последние 2 года
+            .static-years
+              .static-year(data-chart="2019") 2019
+              .static-year.active(data-chart="2020") 2020
+          .chart__imgs.chart__imgs-mobile(data-chart="2019")
+            <svg xmlns="http://www.w3.org/2000/svg" width="336.924" height="336.496" viewBox="0 0 336.924 336.496">
+              <g id="Group_329" data-name="Group 329" transform="translate(-1057.966 -1695.035)">
+                <path id="Path_54" data-name="Path 54" d="M10873.24,12051l39.258-106.637,43.461,21.1,42.831-59.838,37.169-84.54,37.2-24.087,46.513,69.043,48.451-33.189s36.4-37.148,36.762-35.107.027,253.226.027,253.226Z" transform="translate(-9813.001 -10021)" fill="#02e9b9" opacity="0.1"/>
+                <path id="Path_53" data-name="Path 53" d="M10872.89,12050.607l39.517-87.361,39.624-28.437,44.774-82.267,39.526-10.156,45.185-16.25,39.115-68.047,44.664,40.625,39.214-82.032" transform="translate(-9813 -10021)" fill="none" stroke="#02e9b9" stroke-width="3" stroke-dasharray="5 10"/>
+                <path id="Path_55" data-name="Path 55" d="M10872.891,12050.7l39.084-106.789,44.87,21.594,42.113-60.783,37.229-83.177,44.926-15.2,39.3,59.984,47-32.791,36.682-34.773" transform="translate(-9813.001 -10021.091)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="3" stroke-dasharray="5 0"/>
+                <line id="Line_59" data-name="Line 59" y2="172" transform="translate(1141.973 1857.909)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <line id="Line_61" data-name="Line 61" y2="254" transform="translate(1225.945 1775.909)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <line id="Line_63" data-name="Line 63" y2="333.909" transform="translate(1310.917 1696)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <g id="Group_148" data-name="Group 148" transform="translate(1129.971 1893.944)">
+                  <rect id="Rectangle_129" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+                  <text id="_16_4_" data-name="+16,4%" transform="translate(9 26)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+16,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_152" data-name="Rectangle 152" width="8" height="8" rx="4" transform="translate(1138.973 1939.938)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_149" data-name="Group 149" transform="translate(1198.94 1755.966)">
+                  <rect id="Rectangle_129-2" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+                  <text id="_41_4_" data-name="+41,4%" transform="translate(9 26)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+41,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_153" data-name="Rectangle 153" width="8" height="8" rx="4" transform="translate(1218.945 1795.959)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_150" data-name="Group 150" transform="translate(1273.89 1799.959)">
+                  <rect id="Rectangle_129-3" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+                  <text id="_71_4_" data-name="+71,4%" transform="translate(6.95 26.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+71,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_154" data-name="Rectangle 154" width="8" height="8" rx="4" transform="translate(1302.917 1839.939)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_151" data-name="Group 151" transform="translate(1319.89 1730)">
+                  <rect id="Rectangle_129-4" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+                  <text id="_98_7_" data-name="+98,7%" transform="translate(6.84 26.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+98,7%</tspan></text>
+                </g>
+                <rect id="Rectangle_155" data-name="Rectangle 155" width="8" height="8" rx="4" transform="translate(1386.89 1773)" fill="#02e9b9" opacity="0.8"/>
+              </g>
+            </svg>
+          .chart__imgs.chart__imgs-mobile.active(data-chart="2020")
+            <svg xmlns="http://www.w3.org/2000/svg" width="334.366" height="380.891" viewBox="0 0 334.366 380.891">
+              <g id="Group_329" data-name="Group 329" transform="translate(-1058.523 -1650)">
+                <path id="Path_54" data-name="Path 54" d="M10873.24,12051l39.427-87.754,39.644-28.437,44.795-82.267,39.544-10.156,45.206-16.25,39.133-68.047,44.684,40.625s38.889-84.451,39.248-82.411,0,334.668,0,334.668Z" transform="translate(-9813.001 -10021)" fill="#02e9b9" opacity="0.1"/>
+                <path id="Path_53" data-name="Path 53" d="M10872.89,12050.607l39.517-87.361,39.624-28.437,44.774-82.267,39.526-10.156,45.185-16.25,39.115-68.047,44.664,40.625,39.214-82.032" transform="translate(-9813 -10021)" fill="none" stroke="#02e9b9" stroke-width="3"/>
+                <path id="Path_55" data-name="Path 55" d="M10872.891,12050.7l39.084-106.789,44.87,21.594,42.113-60.783,37.229-83.177,44.926-15.2,39.3,59.984,47-32.791,36.682-34.773" transform="translate(-9813.001 -10021.091)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="2" stroke-dasharray="5 10"/>
+                <line id="Line_59" data-name="Line 59" y2="172" transform="translate(1141.973 1857.909)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <line id="Line_61" data-name="Line 61" y2="254" transform="translate(1225.945 1775.909)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <line id="Line_63" data-name="Line 63" y2="333.909" transform="translate(1310.917 1696)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <g id="Group_148" data-name="Group 148" transform="translate(1129.971 1857.944)">
+                  <rect id="Rectangle_129" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+                  <text id="_16_4_" data-name="+16,4%" transform="translate(9 26)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+16,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_152" data-name="Rectangle 152" width="8" height="8" rx="4" transform="translate(1138.973 1903.938)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_149" data-name="Group 149" transform="translate(1201.94 1775.966)">
+                  <rect id="Rectangle_129-2" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+                  <text id="_41_4_" data-name="+41,4%" transform="translate(9 26)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+41,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_153" data-name="Rectangle 153" width="8" height="8" rx="4" transform="translate(1221.945 1815.959)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_150" data-name="Group 150" transform="translate(1275.89 1695)">
+                  <rect id="Rectangle_129-3" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+                  <text id="_71_4_" data-name="+71,4%" transform="translate(6.95 26.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+71,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_154" data-name="Rectangle 154" width="8" height="8" rx="4" transform="translate(1304.917 1734.979)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_151" data-name="Group 151" transform="translate(1317.89 1650)">
+                  <rect id="Rectangle_129-4" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+                  <text id="_98_7_" data-name="+98,7%" transform="translate(6.84 26.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+98,7%</tspan></text>
+                </g>
+                <rect id="Rectangle_155" data-name="Rectangle 155" width="8" height="8" rx="4" transform="translate(1384.89 1693)" fill="#02e9b9" opacity="0.8"/>
+              </g>
+            </svg>
+          .chart__imgs.chart__imgs-desktop(data-chart="2019")
+            <svg xmlns="http://www.w3.org/2000/svg" width="1089.537" height="336.973" viewBox="0 0 1089.537 336.973">
+              <g id="Group_333" data-name="Group 333" transform="translate(-13611.776 4055.161)">
+                <path id="Path_139" data-name="Path 139" d="M10873.239,12051.091l128.057-107.353,145.729,21.872,138.61-60.53,122.586-83.674,146.858-15.116,129.247,59.9,156.377-33.391s118.119-37.508,119.3-35.469-1.348,253.73-1.348,253.73Z" transform="translate(2741 -15771)" fill="#02e9b9" opacity="0.1"/>
+                <path id="Path_140" data-name="Path 140" d="M10872.89,12050.7l129.376-87.385,129.734-28.445,146.593-82.289L11408,11842.42l147.935-16.254L11684,11758.1l146.229,40.636,128.39-82.055" transform="translate(2741 -15771)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="2" stroke-dasharray="5 10"/>
+                <path id="Path_141" data-name="Path 141" d="M10872.89,12050.7l128.079-106.789L11148,11965.5l138-60.783,122-83.177,147.217-15.2,128.783,59.984,154-32.791,120.2-34.773" transform="translate(2741 -15771)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="3"/>
+                <line id="Line_90" data-name="Line 90" y2="172" transform="translate(13889 -3892)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <line id="Line_91" data-name="Line 91" y2="254" transform="translate(14152 -3974)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <line id="Line_92" data-name="Line 92" y2="334" transform="translate(14425 -4054)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <g id="Group_329" data-name="Group 329" transform="translate(11980 -4321)">
+                  <rect id="Rectangle_129" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 465)" fill="#162633"/>
+                  <text id="_8_2_" data-name="+8,2%" transform="translate(1922 491)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+8,2%</tspan></text>
+                </g>
+                <rect id="Rectangle_164" data-name="Rectangle 164" width="8" height="8" rx="4" transform="translate(13885 -3810)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_330" data-name="Group 330" transform="translate(12242 -4416)">
+                  <rect id="Rectangle_129-2" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1914 422)" fill="#162633"/>
+                  <text id="_54_4_" data-name="+54,4%" transform="translate(1923 448)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+54,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_165" data-name="Rectangle 165" width="8" height="8" rx="4" transform="translate(14148 -3954)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_331" data-name="Group 331" transform="translate(12518 -4372)">
+                  <rect id="Rectangle_129-3" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 422)" fill="#162633"/>
+                  <text id="_32_4_" data-name="+32,4%" transform="translate(1919.84 448.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+32,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_166" data-name="Rectangle 166" width="8" height="8" rx="4" transform="translate(14421 -3910)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_332" data-name="Group 332" transform="translate(12713 -4441)">
+                  <rect id="Rectangle_129-4" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 422)" fill="#162633"/>
+                  <text id="_58_7_" data-name="+58,7%" transform="translate(1919.84 448.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+58,7%</tspan></text>
+                </g>
+                <rect id="Rectangle_167" data-name="Rectangle 167" width="8" height="8" rx="4" transform="translate(14693 -3976)" fill="#02e9b9" opacity="0.8"/>
+              </g>
+            </svg>
+          .chart__imgs.chart__imgs-desktop.active(data-chart="2020")
+            <svg xmlns="http://www.w3.org/2000/svg" width="1088.519" height="381.106" viewBox="0 0 1088.519 381.106">
+              <g id="Group_333" data-name="Group 333" transform="translate(-13612.481 4100)">
+                <path id="Path_139" data-name="Path 139" d="M10873.239,12051.091l129.026-87.777,129.734-28.445,146.593-82.289L11408,11842.42l147.935-16.254L11684,11758.1l146.229,40.636s127.262-84.474,128.439-82.434-.016,334.759-.016,334.759Z" transform="translate(2741 -15771)" fill="#02e9b9" opacity="0.1"/>
+                <path id="Path_140" data-name="Path 140" d="M10872.89,12050.7l129.376-87.385,129.734-28.445,146.593-82.289L11408,11842.42l147.935-16.254L11684,11758.1l146.229,40.636,128.39-82.055" transform="translate(2741 -15771)" fill="none" stroke="#02e9b9" stroke-width="3"/>
+                <path id="Path_141" data-name="Path 141" d="M10872.89,12050.7l128.079-106.789L11148,11965.5l138-60.783,122-83.177,147.217-15.2,128.783,59.984,154-32.791,120.2-34.773" transform="translate(2741 -15771)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="2" stroke-dasharray="5 10"/>
+                <line id="Line_90" data-name="Line 90" y2="172" transform="translate(13880 -3892)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <line id="Line_91" data-name="Line 91" y2="254" transform="translate(14156 -3974)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <line id="Line_92" data-name="Line 92" y2="334" transform="translate(14432 -4054)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+                <g id="Group_329" data-name="Group 329" transform="translate(11971 -4357)">
+                  <rect id="Rectangle_129" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 465)" fill="#162633"/>
+                  <text id="_16_4_" data-name="+16,4%" transform="translate(1922 491)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+16,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_164" data-name="Rectangle 164" width="8" height="8" rx="4" transform="translate(13876 -3846)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_330" data-name="Group 330" transform="translate(12246 -4396)">
+                  <rect id="Rectangle_129-2" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1914 422)" fill="#162633"/>
+                  <text id="_41_4_" data-name="+41,4%" transform="translate(1923 448)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+41,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_165" data-name="Rectangle 165" width="8" height="8" rx="4" transform="translate(14152 -3934)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_331" data-name="Group 331" transform="translate(12525 -4477)">
+                  <rect id="Rectangle_129-3" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 422)" fill="#162633"/>
+                  <text id="_71_4_" data-name="+71,4%" transform="translate(1919.84 448.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+71,4%</tspan></text>
+                </g>
+                <rect id="Rectangle_166" data-name="Rectangle 166" width="8" height="8" rx="4" transform="translate(14428 -4015)" fill="#02e9b9" opacity="0.8"/>
+                <g id="Group_332" data-name="Group 332" transform="translate(12713 -4522)">
+                  <rect id="Rectangle_129-4" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 422)" fill="#162633"/>
+                  <text id="_98_7_" data-name="+98,7%" transform="translate(1919.84 448.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+98,7%</tspan></text>
+                </g>
+                <rect id="Rectangle_167" data-name="Rectangle 167" width="8" height="8" rx="4" transform="translate(14693 -4057)" fill="#02e9b9" opacity="0.8"/>
+              </g>
+            </svg>
+        .calculate
+          form.calculate__form
+            .calculate__title Калькулятор дохода
+            .calculate__block
+              .calculate__description В какой валюте вы хотите инвестировать?
+              .calculate__radios.calculate__radios--money
+                label.radio
+                  input(type="radio" value="ETH" name="money" data-ico="Ð")
+                  .radio__text ETH
+                label.radio
+                  input(type="radio" value="USD" name="money" data-ico="$" checked)
+                  .radio__text USD
+                label.radio
+                  input(type="radio" value="RUB" name="money" data-ico='₽')
+                  .radio__text RUB
+                label.radio
+                  input(type="radio" value="BTC" name="money" data-ico="₿")
+                  .radio__text BTC
+            .calculate__block
+              .calculate__description Сумма инвестирования:
+              input.calculate__input(type="text" placeholder="0" value="500")
+            .calculate__block
+              .calculate__description Срок инвестирования:
+              .calculate__radios.calculate__radios--month
+                label.radio.radio--big
+                  input(type="radio"  name="month" data-month="3")
+                  .radio__text 3 мес.
+                label.radio.radio--big
+                  input(type="radio"  name="month" data-month="6")
+                  .radio__text 6 мес.
+                label.radio.radio--big
+                  input(type="radio" name="month" data-month='12' checked)
+                  .radio__text 12 мес.
+            .calculate__block.calculate__block--summ
+              .calculate__description Ваша доходность составит:
+              .calculate__summ -
+      .calulate__link-wrap
+        a.calulate__link(href="#") 
+          | Инвестировать с Indigo
+          .arrow-link
+            +svgsprite('arrow-link-green')
+  section.subscribe 
+    .container 
+      .subscribe__list
+        .subscribe__item
+          .subscribe__item-title Подпишитесь на нашу рассылку, чтобы регулярно получать статистику фонда Indigo Investment
+          .subscribe__item-text Мы отправляем наши рассылки не чаще трех раз в месяц и не любим спам
+        form.subscribe__form 
+          input.subscribe__input(type="text" placeholder="Введите ваш имейл")
+          button.subscribe__button Подписаться
+  section.allstat  
+    .allstat__list 
+      .allstat__item 
+        h3.allstat__title(data-number="6000" data-prefix=">") >0
+        p.text.allstat__text Людей в нашем <br>сообществе
+      .allstat__item 
+        h3.allstat__title(data-number="150000" data-prefix=">$") >$0
+        p.text.allstat__text Общая сумма под <br>управлением нашим фондом
+      .allstat__item 
+        h3.allstat__title(data-number="2000" data-prefix=">$") >$0
+        p.text.allstat__text Средний доход на 1 <br>инвестора
+      .allstat__item 
+        h3.allstat__title(data-number="120000" data-prefix=">$") >$0
+        p.text.allstat__text Суммарно выплачено нашим <br>инвесторам
+  section.work 
+    h3.work__small-title Работать с нами просто
+    .work__title до 50% от дохода
+    p.text.work__text Мы выплачиваем от дохода инвесторам, которые приобрели монету RLBTRADE. <br>Это значит, что от годового дохода фонда Indigo Investment в 100%, ровно половину - получают наши инвесторы, купившие монету.
+    a.work__btn(href="#")
+      | Зарегистрироваться и приобрести монету 
+      .arrow-link
+        +svgsprite('arrow-link-green')
+  section.report 
+    h2.report__title О нас говорят
+    .report__list 
+      .report__item 
+      .report__item 
+      .report__item 
+  sections.partners 
+    .partners__main
+      h2.partners__green-title Партнерская программа Indigo
+      h2.partners__title до 10% от дохода
+      h4.partners__description Мы выплачиваем партнерам нашего фонда
+      a.partners__btn(href="#") Узнать подробнее о программе
+    .partners__info
+      .partners__list 
+        .partners__left 
+          .partners__item.--pi-1
+            .partners__item-ico 
+              img(src="./assets/img/partners/1.svg", alt="")
+            .partners__item-text Персональный <br>подход
+          .partners__item.--pi-2 
+            .partners__item-ico 
+              img(src="./assets/img/partners/2.svg", alt="")
+            .partners__item-text Многоуровневая <br>система
+          .partners__item.--pi-3
+            .partners__item-ico 
+              img(src="./assets/img/partners/3.svg", alt="")
+            .partners__item-text Регулярные <br>бонусы
+        .partners__right
+          .partners__item.--pi-4
+            .partners__item-ico 
+              img(src="./assets/img/partners/4.svg", alt="")
+            .partners__item-text Лучшие <br>условия
+          .partners__item.--pi-5
+            .partners__item-ico 
+              img(src="./assets/img/partners/5.svg", alt="")
+            .partners__item-text Личный <br>менеджер
+          .partners__item.--pi-6
+            .partners__item-ico 
+              img(src="./assets/img/partners/6.svg", alt="")
+            .partners__item-text Система <br>из 4 уровней
+    a.partners__btn.partners__btn--mobile(href="#") Узнать подробнее о программе
+  section.faq
+    .container 
+      h2.faq__title Частые вопросы
+      .accardeon 
+        .accardeon__item 
+          .accardeon__main Как купить монету RLBTRADE?
+          .accardeon__drop
+            p Пригласить людей очень просто. Достаточно зарегистрироваться на нашем сайте и получить доступ к личному кабинету, в котором указаны все условия работы с партнерами. В кабинете также будет отображена вся необходимая вам статистика по вашим приглашенным людям. Если вас интересуют индивидуальные условия - свяжитесь с нашим менеджером по форме ниже.
+        .accardeon__item 
+          .accardeon__main Как происходят расчеты с инвесторами?
+          .accardeon__drop
+            p Пригласить людей очень просто. Достаточно зарегистрироваться на нашем сайте и получить доступ к личному кабинету, в котором указаны все условия работы с партнерами. В кабинете также будет отображена вся необходимая вам статистика по вашим приглашенным людям. Если вас интересуют индивидуальные условия - свяжитесь с нашим менеджером по форме ниже.
+        .accardeon__item 
+          .accardeon__main Как пригласить людей присоединиться и какие условия для партнеров? 
+          .accardeon__drop
+            p Пригласить людей очень просто. Достаточно зарегистрироваться на нашем сайте и получить доступ к личному кабинету, в котором указаны все условия работы с партнерами. В кабинете также будет отображена вся необходимая вам статистика по вашим приглашенным людям. Если вас интересуют индивидуальные условия - свяжитесь с нашим менеджером по форме ниже.
+            p Пригласить людей очень просто. Достаточно зарегистрироваться на нашем сайте и получить доступ к личному кабинету, в котором указаны все условия работы с партнерами.
+  section.question 
+    .container
+      h2.question__title.--mobile Остались вопросы?
+      .question__description.--mobile С радостью готовы вам на них ответить!
+      form.question__form
+        h2.question__title Остались вопросы?
+        .question__description С радостью готовы вам на них ответить!
+        .question__list
+          .question__item
+            .question__inputs
+              input.question__input(type="text" placeholder="Ваше имя")
+              input.question__input(type="text" placeholder="Ваш имейл")
+              input.question__input(type="text" placeholder="Телефон")
+              input.question__input(type="text" placeholder="Ссылка на соцсети")
+            textarea.textarea(placeholder="Ваш вопрос")
+            button.question__btn(type="submit")
+              | Отправить сообщение
+              .arrow-link
+                +svgsprite('arrow-link-green')
+          .question__item.question__item--contacts
+            .question__contacts
+              .question__contact
+                .question__contacts-title Мы в соцсетях:
+                .question__socials 
+                  a.main-socials__link.main-socials__link-in(href="#")
+                    img(src="./assets/img/socials/in.svg", alt="")
+                  a.main-socials__link.main-socials__link-tm(href="#")
+                    img(src="./assets/img/socials/tm.svg", alt="")
+                  a.main-socials__link.main-socials__link-yt(href="#")
+                    img(src="./assets/img/socials/yt.svg", alt="")
+              .question__contact
+                .question__contacts-title Свяжитесь с нами:
+                a.question__contacts-link(href="mailto:info@indigoinvest.pro") info@indigoinvest.pro 
+              .question__contact
+                .question__contacts-title Телефон:
+                a.question__contacts-link(href="tel:+433822832322") +43 382 283 23 22
+
